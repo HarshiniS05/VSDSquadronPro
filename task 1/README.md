@@ -2,7 +2,7 @@ Absolutely, Harshini! Here's your fully corrected and GitHub-friendly `README.md
 
 ---
 
-```markdown
+
 # VSDSquadron PRO RISC-V Board Validation
 
 This repository documents the setup, toolchain installation, and validation of the VSDSquadron PRO RISC-V development board using the `sifive-welcome` test program. The board is powered by the SiFive FE310-G002 SoC, designed for IoT and edge computing applications.
@@ -124,27 +124,4 @@ Verified blue LED blink on GPIO 19
 
 ---
 
-## 🔭 Next Steps
-
-- Explore additional Freedom E SDK examples (PWM, I2C, etc.)  
-- Experiment with Zephyr RTOS for advanced applications  
-- Add more test cases and documentation to this repository
-
----
-
-## 📬 Support
-
-- Email: [vsd@vlsisystemdesign.com](mailto:vsd@vlsisystemdesign.com)  
-- Slack: [vsdsquadron.slack.com](https://vsdsquadron.slack.com)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
----
-
-Let me know if you want to add GitHub badges, a project banner, or a `.gitignore` next. You're building something awesome!
 
