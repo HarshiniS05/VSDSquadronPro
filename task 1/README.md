@@ -1,6 +1,8 @@
+Absolutely, Harshini! Here's your fully corrected and GitHub-friendly `README.md` with proper image embedding using relative paths. This version assumes your `README.md` is inside `task 1/` and your images are in `task 1/images/`.
 
 ---
 
+```markdown
 # VSDSquadron PRO RISC-V Board Validation
 
 This repository documents the setup, toolchain installation, and validation of the VSDSquadron PRO RISC-V development board using the `sifive-welcome` test program. The board is powered by the SiFive FE310-G002 SoC, designed for IoT and edge computing applications.
@@ -8,23 +10,23 @@ This repository documents the setup, toolchain installation, and validation of t
 ---
 
 ## 🗂 Repository Structure
-```
-VSDSquadronPro
-├── images
-│   ├── 1 step usb.png
-│   ├── 2 step usb.png
-│   ├── 3 step usb.png
-│   ├── Makerchip.v
-│   ├── output.jpg
-│   ├── step 1.png
-│   ├── step 2.png
-│   ├── step 3.png
-│   └── step 4.png
-└── README.md
-
 
 ```
-
+VSDSquadronPro/
+└── task 1/
+    ├── README.md
+    └── images/
+        ├── 1 step usb.png
+        ├── 2 step usb.png
+        ├── 3 step usb.png
+        ├── freedomstudio 3-1-1.png
+        ├── application.png
+        ├── step 1.png
+        ├── step 2.png
+        ├── step 3.png
+        ├── step 4.png
+        └── output.jpg
+```
 
 ---
 
@@ -55,20 +57,19 @@ Refer to the VSDSquadron PRO User Guide for detailed specs (Table 3) and IO assi
 
 #### ✅ Driver Installation
 
-- Used [Zadig](https://zadig.akeo.ie/) to install `libusb-win32` for **Dual RS-232-HS (Interface 0)**  
-- Screenshot: ![Zadig Driver Installation step 1](/home/harshini/VSDSquadronPro/task 1/images/1 step usb.png)
-![Zadig Driver Installation step 2](/home/harshini/VSDSquadronPro/task 1/images/2 step usb.png)
-![Zadig Driver Installation step 3](/home/harshini/VSDSquadronPro/task 1/images/3 step usb.png)
+Used Zadig to install `libusb-win32` for Dual RS-232-HS (Interface 0)  
+![Zadig Step 1](images/1%20step%20usb.png)  
+![Zadig Step 2](images/2%20step%20usb.png)  
+![Zadig Step 3](images/3%20step%20usb.png)
 
 #### 🧰 Freedom Studio Setup
 
-- Downloaded `VSDSquadronPRO.tar.gz` from the [VSD website](https://vsdsquadron.com)  
-- Extracted to `D:\FreedomStudio`  
-- Launched `FreedomStudio-3-1-1.exe`, clicked **Run anyway** on Windows security prompt  
-- Created a new workspace  
-- Screenshot: ![application:1](/home/harshini/VSDSquadronPro/task 1/images/freedomstudio 3-1-1.png)
-![application:2](/home/harshini/VSDSquadronPro/task 1/images/application.png)
-
+Downloaded `VSDSquadronPRO.tar.gz` from the VSD website  
+Extracted to `D:\FreedomStudio`  
+Launched `FreedomStudio-3-1-1.exe`, clicked "Run anyway" on Windows security prompt  
+Created a new workspace  
+![Freedom Studio Launch](images/freedomstudio%203-1-1.png)  
+![Application Screenshot](images/application.png)
 
 #### 📦 Dependencies
 
@@ -90,18 +91,17 @@ These are sufficient for FE310-G002 development.
 3. Generated a debug configuration  
 4. Connected the board via USB-C (5V input)  
 5. Opened **Debug Configurations > OpenOCD tab > Debug**  
-   - Screenshot: ![Freedom Studio step 1 ](/home/harshini/VSDSquadronPro/task 1/images/step 1.png)
-![step 2](/home/harshini/VSDSquadronPro/task 1/images/step 2.png)
-![step 3](/home/harshini/VSDSquadronPro/task 1/images/step 3.png)
-![step 4](/home/harshini/VSDSquadronPro/task 1/images/step 4.png)
+   ![Debug Step 1](images/step%201.png)  
+   ![Debug Step 2](images/step%202.png)  
+   ![Debug Step 3](images/step%203.png)  
+   ![Debug Step 4](images/step%204.png)
 
 ### Execution:
 
-- Clicked **Resume/Run** in the debug perspective  
-- Observed `"SiFive"` output in the console terminal (UART0 on IO16/17)  
-- Verified blue LED blink on GPIO 19  
-- Screenshot:![output](/home/harshini/VSDSquadronPro/task 1/images/output.png)
-- 
+Clicked **Resume/Run** in the debug perspective  
+Observed `"SiFive"` output in the console terminal (UART0 on IO16/17)  
+Verified blue LED blink on GPIO 19  
+![Output](images/output.jpg)
 
 ### Notes:
 
@@ -122,8 +122,29 @@ These are sufficient for FE310-G002 development.
   - JTAG debugging via USB-C and OpenOCD  
 - **Issues**: Zadig required correct interface selection during driver install  
 
+---
+
+## 🔭 Next Steps
+
+- Explore additional Freedom E SDK examples (PWM, I2C, etc.)  
+- Experiment with Zephyr RTOS for advanced applications  
+- Add more test cases and documentation to this repository
 
 ---
 
+## 📬 Support
 
+- Email: [vsd@vlsisystemdesign.com](mailto:vsd@vlsisystemdesign.com)  
+- Slack: [vsdsquadron.slack.com](https://vsdsquadron.slack.com)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+
+---
+
+Let me know if you want to add GitHub badges, a project banner, or a `.gitignore` next. You're building something awesome!
 
