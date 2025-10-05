@@ -1,4 +1,4 @@
-Absolutely, Harshini! Here's your fully corrected and GitHub-friendly `README.md` with proper image embedding using relative paths. This version assumes your `README.md` is inside `task 1/` and your images are in `task 1/images/`.
+
 
 ---
 
